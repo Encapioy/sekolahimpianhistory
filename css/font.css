@@ -1,0 +1,62 @@
+   @font-face {
+       font-family: Agrandir-Regular;
+       src: url('fonts/Agrandir-Regular.otf');
+   }
+
+   @font-face {
+       font-family: Agrandir-Bold;
+       src: url('fonts/Agrandir-TextBold.otf');
+   }
+
+   @font-face {
+       font-family: SF-Regular;
+       src: url('fonts/SFPRODISPLAYREGULAR.OTF');
+   }
+
+   @font-face {
+       font-family: SF-Bold;
+       src: url('fonts/SFPRODISPLAYBOLD.OTF');
+   }
+
+   @font-face {
+       font-family: SF-Medium;
+       src: url('fonts/SFPRODISPLAYMEDIUM.OTF');
+   }
+
+   @font-face {
+       font-family: SF-Light;
+       src: url('fonts/SF-Pro-Display-Light.otf');
+   }
+
+   @font-face {
+       font-family: SF-SemiBold;
+       src: url('fonts/SF-Pro-Display-Semibold.otf');
+   }
+
+   .ff-sfLight {
+       font-family: SF-Light;
+   }
+
+   .ff-sfSemibold {
+       font-family: SF-Bold;
+   }
+
+   .ff-sfMedium {
+       font-family: SF-Medium;
+   }
+
+   .ff-sfBold {
+       font-family: SF-Bold;
+   }
+
+   .ff-sfRegular {
+       font-family: SF-Regular;
+   }
+
+   .ff-agrandiBold {
+       font-family: Agrandir-Bold;
+   }
+
+   .ff-agrandirRegular {
+       font-family: Agrandir-Regular;
+   }

@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: Agrandir-Regular;
+    src: url('../fonts/Agrandir-Regular.otf');
+}
+
+@font-face {
+    font-family: Agrandir-Bold;
+    src: url('../fonts/Agrandir-TextBold.otf');
+}
+
+@font-face {
+    font-family: SF-Regular;
+    src: url('../fonts/SFPRODISPLAYREGULAR.OTF');
+}
+
+@font-face {
+    font-family: SF-Bold;
+    src: url('../fonts/SFPRODISPLAYBOLD.OTF');
+}
+
+@font-face {
+    font-family: SF-Medium;
+    src: url('../fonts/SFPRODISPLAYMEDIUM.OTF');
+}
+
+@font-face {
+    font-family: SF-Light;
+    src: url('../fonts/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+    font-family: SF-SemiBold;
+    src: url('../fonts/SF-Pro-Display-Semibold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEFEF;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+}
+
+.mask-header{
+    height: 101.5vh;
+}
+
+
+@media screen and (max-width:420px) {
+    nav .navbar-nav {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 80px;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background-color: #ffffff2a;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+    }
+
+    nav .show .navbar-nav {
+        transform: translateX(0);
+    }
+}
+
+.navbar {
+    box-shadow: none;
+    z-index: 1001;
+}
+
+.navbar-brand {
+    font-family: Agrandir-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33.0667px;
+    line-height: 43px;
+    background: linear-gradient(95.54deg, #BA85D3 15.44%, #582C6C 84.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 30px;
+    margin-top: 20px !important;
+}
+
+.nav-item a {
+    font-family: SF-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.nav-item a:hover {
+    transform: scale(1.2);
+    color: #fefefe;
+}
+
+.navbar-nav li a.home {
+    font-weight: 600;
+    color: #fefefe;
+}
+
+.card-image {
+    height: 250px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About */
+.about {
+    padding-left: 0 !important;
+    margin: 30px 0 30px 0;
+}
+
+.about-title {
+    margin-top: -15px;
+    text-align: left;
+    font-family: SF-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.about-eng {
+    font-family: SF-SemiBold;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    background: linear-gradient(91.05deg, #8689AD 18.57%, #595C88 67.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-text {
+    font-family: SF-Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #615C5C;
+}
+
+.about-addition {
+    display: none;
+}
+
+.apaitu {
+    display: none;
+}
+
+.gaje {
+    display: none;
+}
+
+/* plp */
+
+.portofolio-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 33.0667px;
+    line-height: 39px;
+    color: #E0DCDC !important;
+}
+
+.portofolio-eng {
+    border: 1px solid grey;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.5333px;
+    line-height: 20px;
+    background: linear-gradient(91.05deg, #8689AD 18.57%, #595C88 67.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.0444px;
+    line-height: 26px;
+    color: #E0DCDC;
+}
+
+.project-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.5333px;
+    line-height: 20px;
+    color: #706D6D;
+}
+
+.badge-tipe {
+    border: 1px solid grey;
+}
+
+.plp-work .container {
+    padding: 30px;
+}
+
+.plp-class {
+    margin: 60px 0 60px 0;
+}
+
+.plp-title {
+
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50.7128px;
+    line-height: 66px;
+    background: linear-gradient(95.54deg, #BA85D3 15.44%, #582C6C 84.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-email {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.6667px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #9A979B;
+}
+
+.footer-number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.6667px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #9A979B;
+}
+
+.footer-sosmed a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.2737px;
+    line-height: 28px;
+    color: #8F8F8F;
+}
+
+.buttonText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: none;
+    /* identical to box height */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* text sementara */
+.textSementara{
+    color: #000000;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 80px auto 10px auto;
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+    Edit Header and Navbar .navbar {
+        box-shadow: none;
+    }
+
+    .navbar-brand {
+        font-family: Agrandir-Bold;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 33.0667px;
+        line-height: 43px;
+        background: linear-gradient(95.54deg, #BA85D3 15.44%, #582C6C 84.17%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-left: 60px;
+        margin-top: 5px !important;
+    }
+
+    .nav-item a {
+        margin-left: 80px;
+        font-family: SF-Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.2889px;
+        line-height: 23px;
+        color: #fff;
+    }
+
+    .navbar-nav li a.home {
+        font-weight: 500;
+        color: #fefefe;
+    }
+
+
+    .about-title {
+        text-align: left;
+        margin-top: -15px;
+        font-family: SF-Bold;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 39px;
+        color: #000000;
+    }
+
+    .about-eng {
+        font-family: SF-SemiBold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20.6667px;
+        line-height: 25px;
+        background: linear-gradient(91.05deg, #8689AD 18.57%, #595C88 67.34%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .about-text {
+        font-family: SF-Regular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16.5333px;
+        line-height: 20px;
+        color: #615C5C;
+    }
+
+    .gaje {
+        display: contents;
+    }
+
+    .apaitu {
+        display: contents;
+    }
+
+    .tentang {
+        display: none;
+    }
+
+    .about-addition {
+        display: contents;
+    }
+
+    .footer-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50.7128px;
+        line-height: 66px;
+        background: linear-gradient(95.54deg, #BA85D3 15.44%, #582C6C 84.17%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .footer-email {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20.6667px;
+        line-height: 25px;
+        /* identical to box height */
+        color: #9A979B;
+    }
+
+    .footer-number {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20.6667px;
+        line-height: 25px;
+        /* identical to box height */
+        color: #9A979B;
+    }
+
+    .footer-sosmed a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21.2737px;
+        line-height: 28px;
+        color: #8F8F8F;
+    }
+
+    .buttonText {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24.6304px;
+        text-transform: none;
+        /* identical to box height */
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
